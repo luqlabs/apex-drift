@@ -117,7 +117,7 @@ export default function AboutPage() {
       </section>
 
       {/* Visi & Misi */}
-      <section className="py-20 px-6 bg-[#0D0D0D]" aria-label="Visi dan Misi">
+      <section className="py-12 md:py-20 px-4 md:px-6 bg-[#0D0D0D]" aria-label="Visi dan Misi">
         <div className="max-w-screen-xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <motion.div
@@ -161,7 +161,7 @@ export default function AboutPage() {
       </section>
 
       {/* Team */}
-      <section className="py-20 px-6" aria-label="Tim Mekanik">
+      <section className="py-12 md:py-20 px-4 md:px-6" aria-label="Tim Mekanik">
         <div className="max-w-screen-xl mx-auto">
           <motion.div
             className="mb-14"
@@ -219,7 +219,7 @@ export default function AboutPage() {
       </section>
 
       {/* Milestones */}
-      <section className="py-20 px-6 bg-[#0D0D0D]" aria-label="Perjalanan FT Garage">
+      <section className="py-12 md:py-20 px-4 md:px-6 bg-[#0D0D0D]" aria-label="Perjalanan FT Garage">
         <div className="max-w-screen-xl mx-auto">
           <motion.div
             className="mb-14"
@@ -269,7 +269,7 @@ export default function AboutPage() {
       </section>
 
       {/* Facilities */}
-      <section className="py-20 px-6" aria-label="Fasilitas Bengkel">
+      <section className="py-12 md:py-20 px-4 md:px-6" aria-label="Fasilitas Bengkel">
         <div className="max-w-screen-xl mx-auto">
           <motion.div
             className="mb-14"
@@ -311,7 +311,7 @@ export default function AboutPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 px-6 bg-[#0D0D0D] text-center" aria-label="CTA">
+      <section className="py-12 md:py-20 px-4 md:px-6 bg-[#0D0D0D] text-center" aria-label="CTA">
         <div className="max-w-screen-xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 30 }}

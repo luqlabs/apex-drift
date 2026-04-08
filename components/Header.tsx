@@ -73,8 +73,7 @@ export default function Header() {
           onClick={() => setMenuOpen(!menuOpen)}
           id="mobile-menu-btn"
           aria-label="Toggle menu"
-          className="md:hidden flex flex-col gap-1.5 p-2 z-[110] relative"
-          style={{ display: "none" }}
+          className="mobile-menu-btn flex flex-col gap-1.5 p-2 z-[110] relative"
         >
           <span
             className="w-6 h-px block transition-all duration-300"

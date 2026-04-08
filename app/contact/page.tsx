@@ -88,7 +88,7 @@ export default function ContactPage() {
       </section>
 
       {/* Content */}
-      <section className="py-12 px-6 pb-20" aria-label="Info Kontak dan Peta">
+      <section className="py-8 md:py-12 px-4 md:px-6 pb-16 md:pb-20" aria-label="Info Kontak dan Peta">
         <div className="max-w-screen-xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
 
@@ -260,7 +260,7 @@ export default function ContactPage() {
       </section>
 
       {/* Bottom CTA */}
-      <section className="py-16 px-6 bg-[#0D0D0D]" aria-label="CTA Booking">
+      <section className="py-12 md:py-16 px-4 md:px-6 bg-[#0D0D0D]" aria-label="CTA Booking">
         <div className="max-w-screen-xl mx-auto">
           <motion.div
             className="flex flex-col md:flex-row items-center justify-between gap-8 p-8 border"

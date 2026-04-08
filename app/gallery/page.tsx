@@ -83,7 +83,7 @@ export default function GalleryPage() {
       </section>
 
       {/* Filter */}
-      <section className="px-6 py-8" aria-label="Filter galeri">
+      <section className="px-4 md:px-6 py-6 md:py-8" aria-label="Filter galeri">
         <div className="max-w-screen-xl mx-auto">
           <div className="flex flex-wrap gap-3">
             {FILTERS.map((f) => (
@@ -107,7 +107,7 @@ export default function GalleryPage() {
       </section>
 
       {/* Grid */}
-      <section className="px-6 pb-16" aria-label="Grid galeri">
+      <section className="px-4 md:px-6 pb-12 md:pb-16" aria-label="Grid galeri">
         <div className="max-w-screen-xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {filtered.map((item, i) => (
@@ -177,7 +177,7 @@ export default function GalleryPage() {
       </section>
 
       {/* Videos Section */}
-      <section className="py-16 px-6 bg-[#0D0D0D]" aria-label="Video Tips">
+      <section className="py-12 md:py-16 px-4 md:px-6 bg-[#0D0D0D]" aria-label="Video Tips">
         <div className="max-w-screen-xl mx-auto">
           <motion.div
             className="mb-12"
@@ -235,7 +235,7 @@ export default function GalleryPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 px-6 text-center" aria-label="CTA">
+      <section className="py-16 md:py-20 px-4 md:px-6 text-center" aria-label="CTA">
         <div className="max-w-screen-xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 30 }}

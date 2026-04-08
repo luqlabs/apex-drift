@@ -143,7 +143,7 @@ export default function HomePage() {
       {/* ── HERO CLIMAX — ENGINE IS OUR PASSION ── */}
       <section className="hero-climax" id="hero-climax" aria-label="FT Garage Hero">
         <div className="max-w-screen-xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-16 items-start">
             {/* Left: Big Text */}
             <motion.div
               initial={{ opacity: 0, x: -60 }}
@@ -167,7 +167,7 @@ export default function HomePage() {
               </div>
 
               {/* CTA Buttons */}
-              <div className="flex flex-wrap gap-4">
+              <div className="flex flex-col sm:flex-row flex-wrap gap-3">
                 <Link href="/booking" className="btn-gold" id="climax-booking-btn">
                   <span>Booking Servis Sekarang</span>
                   <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
@@ -197,7 +197,7 @@ export default function HomePage() {
               transition={{ duration: 0.9, delay: 0.15, ease: [0.76, 0, 0.24, 1] }}
             >
               <p className="label-sm mb-6">Layanan Kami</p>
-              <div className="grid grid-cols-3 gap-3">
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
                 {SERVICES.map((svc, i) => (
                   <motion.div
                     key={svc.id}
@@ -224,9 +224,9 @@ export default function HomePage() {
       </section>
 
       {/* ── STATS BAND ── */}
-      <section className="bg-[#0D0D0D] py-16 px-6" aria-label="Statistik Bengkel">
+      <section className="bg-[#0D0D0D] py-12 md:py-16 px-4 md:px-6" aria-label="Statistik Bengkel">
         <div className="max-w-screen-xl mx-auto">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
             {STATS.map((stat, i) => (
               <motion.div
                 key={stat.label}
@@ -255,7 +255,7 @@ export default function HomePage() {
       </section>
 
       {/* ── SOCIAL PROOF / TESTIMONIALS ── */}
-      <section className="py-24 px-6 bg-[#080808]" id="testimonials" aria-label="Testimoni Pelanggan">
+      <section className="py-16 md:py-24 px-4 md:px-6 bg-[#080808]" id="testimonials" aria-label="Testimoni Pelanggan">
         <div className="max-w-screen-xl mx-auto">
           {/* Header */}
           <motion.div
@@ -272,7 +272,7 @@ export default function HomePage() {
 
           {/* Google Rating Highlight */}
           <motion.div
-            className="flex items-center gap-6 mb-12 p-6 card-glass"
+            className="flex flex-col sm:flex-row items-center gap-6 mb-12 p-5 sm:p-6 card-glass"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
@@ -299,8 +299,7 @@ export default function HomePage() {
             </div>
           </motion.div>
 
-          {/* Testimonial Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
             {TESTIMONIALS.map((t, i) => (
               <motion.div
                 key={t.id}
@@ -332,10 +331,10 @@ export default function HomePage() {
       </section>
 
       {/* ── WA CTA BANNER ── */}
-      <section className="py-16 px-6 bg-[#0D0D0D]" aria-label="Hubungi via WhatsApp">
+      <section className="py-12 md:py-16 px-4 md:px-6 bg-[#0D0D0D]" aria-label="Hubungi via WhatsApp">
         <div className="max-w-screen-xl mx-auto">
           <motion.div
-            className="flex flex-col md:flex-row items-center justify-between gap-8 p-8 border border-[rgba(201,168,76,0.2)] bg-[var(--gold-glow)]"
+            className="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8 p-5 md:p-8 border border-[rgba(201,168,76,0.2)] bg-[var(--gold-glow)]"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}

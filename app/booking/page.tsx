@@ -354,7 +354,7 @@ export default function BookingPage() {
       </section>
 
       {/* Form Section */}
-      <section className="py-12 px-6 pb-24" aria-label="Formulir Booking">
+      <section className="py-8 md:py-12 px-4 md:px-6 pb-16 md:pb-24" aria-label="Formulir Booking">
         <div className="max-w-screen-xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             {/* Form */}

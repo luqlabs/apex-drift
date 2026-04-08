@@ -133,7 +133,7 @@ export default function BlogPage() {
       </section>
 
       {/* Featured Article */}
-      <section className="px-6 pb-8" aria-label="Artikel utama">
+      <section className="px-4 md:px-6 pb-6 md:pb-8" aria-label="Artikel utama">
         <div className="max-w-screen-xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -187,7 +187,7 @@ export default function BlogPage() {
       </section>
 
       {/* Article Grid */}
-      <section className="px-6 pb-20" aria-label="Daftar artikel">
+      <section className="px-4 md:px-6 pb-12 md:pb-20" aria-label="Daftar artikel">
         <div className="max-w-screen-xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {ARTICLES.slice(1).map((article, i) => (
@@ -241,7 +241,7 @@ export default function BlogPage() {
       </section>
 
       {/* Newsletter / WA CTA */}
-      <section className="py-16 px-6 bg-[#0D0D0D]" aria-label="Notifikasi artikel baru">
+      <section className="py-12 md:py-16 px-4 md:px-6 bg-[#0D0D0D]" aria-label="Notifikasi artikel baru">
         <div className="max-w-screen-xl mx-auto">
           <motion.div
             className="text-center"

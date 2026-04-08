@@ -88,7 +88,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Categories */}
-      <section className="py-16 px-6" aria-label="Kategori Layanan">
+      <section className="py-12 md:py-16 px-4 md:px-6" aria-label="Kategori Layanan">
         <div className="max-w-screen-xl mx-auto space-y-6">
           {CATEGORIES.map((cat, ci) => (
             <motion.div
@@ -157,7 +157,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Bottom CTA */}
-      <section className="py-20 px-6" aria-label="CTA Booking">
+      <section className="py-16 md:py-20 px-4 md:px-6" aria-label="CTA Booking">
         <div className="max-w-screen-xl mx-auto text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}

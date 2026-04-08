@@ -146,7 +146,7 @@ function TypingDots() {
 // ─── SCROLL INDICATOR ─────────────────────────────────────────────────────────
 function ScrollIndicator({ scrollPct }: { scrollPct: number }) {
   return (
-    <div className="fixed right-8 top-1/2 -translate-y-1/2 z-50 flex flex-col items-center gap-2">
+    <div className="fixed right-8 top-1/2 -translate-y-1/2 z-50 flex flex-col items-center gap-2 scroll-indicator-desktop">
       <div className="h-32 w-px bg-zinc-800 relative overflow-hidden">
         <motion.div
           className="absolute top-0 left-0 w-full origin-top"
@@ -196,7 +196,7 @@ function BeatText({
 
   return (
     <motion.div
-      className="absolute inset-0 flex flex-col justify-end pb-20 px-12 md:px-20 pointer-events-none"
+      className="absolute inset-0 flex flex-col justify-end pb-16 px-5 sm:px-12 md:px-20 pointer-events-none"
       animate={{ opacity, y: isVisible ? 0 : 40 }}
       transition={{ duration: 0.6, ease: [0.76, 0, 0.24, 1] }}
       aria-hidden={!isVisible}
@@ -419,7 +419,7 @@ export default function DriftSequence() {
           <div className="canvas-fade-bottom" aria-hidden="true" />
 
           {/* Vertical series label */}
-          <div className="absolute left-8 top-1/2 -translate-y-1/2 z-10">
+          <div className="absolute left-8 top-1/2 -translate-y-1/2 z-10 hidden md:block">
             <p className="series-number text-zinc-800">
               FT GARAGE // KEDUNG ASEM · SBY
             </p>
