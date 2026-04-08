@@ -1,0 +1,828 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@400;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ================================
+   DESIGN TOKENS — FT GARAGE
+   ================================ */
+:root {
+  --bg: #080808;
+  --bg-card: #111111;
+  --bg-elevated: #181818;
+  --text-primary: #ffffff;
+  --text-muted: #71717a;
+  --text-faint: #3f3f46;
+  --accent-line: #27272a;
+
+  /* Gold / Bronze Accent */
+  --gold: #C9A84C;
+  --gold-dark: #A07832;
+  --gold-light: #E2C16A;
+  --gold-glow: rgba(201, 168, 76, 0.15);
+
+  /* WhatsApp */
+  --wa-green: #25D366;
+  --wa-green-dark: #128C7E;
+}
+
+/* ================================
+   RESET
+   ================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--bg);
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text-primary);
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ================================
+   SCROLLBAR
+   ================================ */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: #080808;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gold-dark);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #27272a #080808;
+}
+
+/* ================================
+   TYPOGRAPHY HELPERS
+   ================================ */
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.heading-xl {
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(3rem, 8vw, 7rem);
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  line-height: 0.95;
+  text-transform: uppercase;
+}
+
+.heading-lg {
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.heading-md {
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(1.25rem, 3vw, 2rem);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+}
+
+.label-sm {
+  font-size: clamp(0.6rem, 1vw, 0.75rem);
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.label-gold {
+  font-size: clamp(0.6rem, 1vw, 0.75rem);
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+/* ================================
+   GOLD ACCENT LINE
+   ================================ */
+.gold-line {
+  width: 3rem;
+  height: 2px;
+  background: linear-gradient(90deg, var(--gold), transparent);
+}
+
+/* ================================
+   BUTTONS
+   ================================ */
+
+/* Primary Gold Button */
+.btn-gold {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.875rem 2.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #080808;
+  background: var(--gold);
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  transition: color 0.4s ease;
+  text-decoration: none;
+}
+
+.btn-gold::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--gold-dark);
+  transform: translateX(-101%);
+  transition: transform 0.4s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.btn-gold:hover::before {
+  transform: translateX(0);
+}
+
+.btn-gold span,
+.btn-gold svg {
+  position: relative;
+  z-index: 1;
+}
+
+.btn-gold:hover svg {
+  transform: translateX(4px);
+}
+
+.btn-gold svg {
+  transition: transform 0.3s ease;
+}
+
+/* Outline Button (white border) */
+.btn-outline {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.875rem 2.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  overflow: hidden;
+  transition: color 0.4s ease, border-color 0.4s ease;
+  text-decoration: none;
+}
+
+.btn-outline::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: #ffffff;
+  transform: translateX(-101%);
+  transition: transform 0.4s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.btn-outline:hover::before {
+  transform: translateX(0);
+}
+
+.btn-outline:hover {
+  color: #080808;
+}
+
+.btn-outline span,
+.btn-outline svg {
+  position: relative;
+  z-index: 1;
+}
+
+/* WhatsApp Button */
+.btn-wa {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.875rem 2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: var(--wa-green);
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-wa:hover {
+  background: var(--wa-green-dark);
+  transform: translateY(-2px);
+}
+
+/* Legacy apex-btn support */
+.apex-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.875rem 2.5rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #080808;
+  background: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  cursor: pointer;
+  overflow: hidden;
+  transition: color 0.4s ease, background 0.4s ease;
+}
+
+.apex-btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: #080808;
+  transform: translateX(-101%);
+  transition: transform 0.4s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.apex-btn:hover::before {
+  transform: translateX(0);
+}
+
+.apex-btn:hover {
+  color: #ffffff;
+}
+
+.apex-btn span,
+.apex-btn svg {
+  position: relative;
+  z-index: 1;
+}
+
+.apex-btn:hover svg {
+  transform: translateX(4px);
+}
+
+.apex-btn svg {
+  position: relative;
+  z-index: 1;
+  transition: transform 0.3s ease;
+}
+
+/* ================================
+   CARDS
+   ================================ */
+.card-dark {
+  background: var(--bg-card);
+  border: 1px solid var(--accent-line);
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.card-dark:hover {
+  border-color: var(--gold-dark);
+  transform: translateY(-4px);
+}
+
+.card-glass {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* ================================
+   CANVAS FILTER — NOIR CINEMATIC
+   ================================ */
+.drift-canvas {
+  filter: contrast(1.1) brightness(0.9);
+}
+
+/* ================================
+   LOADING SCREEN
+   ================================ */
+.loader-text {
+  font-size: clamp(0.6rem, 1vw, 0.75rem);
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.loader-counter {
+  font-size: clamp(3rem, 8vw, 6rem);
+  font-weight: 900;
+  letter-spacing: -0.05em;
+  color: var(--text-primary);
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ================================
+   PROGRESS BAR
+   ================================ */
+.loader-bar-container {
+  position: relative;
+  width: 100%;
+  height: 1px;
+  background: #18181b;
+  overflow: hidden;
+}
+
+.loader-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--gold-dark), var(--gold), var(--gold-dark));
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  transition: width 0.05s linear;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% center;
+  }
+
+  100% {
+    background-position: -200% center;
+  }
+}
+
+/* ================================
+   SCROLL INDICATOR
+   ================================ */
+.scroll-indicator-line {
+  transition: height 0.1s linear;
+  transform-origin: top;
+}
+
+/* ================================
+   BEAT TEXT ANIMATIONS
+   ================================ */
+.beat-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(3.5rem, 9vw, 9rem);
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+
+.beat-subtitle {
+  font-size: clamp(0.65rem, 1.2vw, 0.875rem);
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  font-weight: 400;
+}
+
+/* ================================
+   HERO CLIMAX — ENGINE IS OUR PASSION
+   ================================ */
+.hero-climax {
+  position: relative;
+  background: #080808;
+  padding: 8rem 3rem 6rem;
+  overflow: hidden;
+}
+
+.hero-climax::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+
+.hero-climax-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(3.5rem, 10vw, 9rem);
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  line-height: 0.88;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.hero-climax-text .gold {
+  color: var(--gold);
+}
+
+.hero-tag {
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(0.8rem, 1.5vw, 1rem);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--gold);
+  text-transform: lowercase;
+}
+
+/* ================================
+   SERVICE ICON CARDS
+   ================================ */
+.service-icon-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem 1.5rem;
+  background: var(--bg-card);
+  border: 1px solid var(--accent-line);
+  cursor: pointer;
+  text-decoration: none;
+  transition: border-color 0.3s ease, background 0.3s ease, transform 0.3s ease;
+}
+
+.service-icon-card:hover {
+  border-color: var(--gold);
+  background: var(--bg-elevated);
+  transform: translateY(-6px);
+}
+
+.service-icon-card:hover .service-icon-wrap {
+  background: var(--gold-glow);
+  border-color: var(--gold);
+}
+
+.service-icon-wrap {
+  width: 3.5rem;
+  height: 3.5rem;
+  border: 1px solid var(--accent-line);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.service-icon-wrap svg {
+  color: var(--gold);
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.service-icon-label {
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+.service-icon-card:hover .service-icon-label {
+  color: #ffffff;
+}
+
+/* ================================
+   TESTIMONIAL CARD
+   ================================ */
+.testimonial-card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--accent-line);
+  padding: 2rem;
+  position: relative;
+  transition: border-color 0.3s ease;
+}
+
+.testimonial-card:hover {
+  border-color: rgba(201, 168, 76, 0.3);
+}
+
+.testimonial-card::before {
+  content: '"';
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  font-size: 4rem;
+  line-height: 1;
+  color: var(--accent-line);
+  font-family: Georgia, serif;
+}
+
+/* ================================
+   RADIAL VIGNETTE OVERLAY ON CANVAS
+   ================================ */
+.canvas-vignette {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(ellipse 60% 50% at 50% 50%,
+      transparent 30%,
+      rgba(8, 8, 8, 0.3) 60%,
+      rgba(8, 8, 8, 0.85) 100%);
+}
+
+.canvas-fade-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 30vh;
+  pointer-events: none;
+  background: linear-gradient(to bottom, transparent, #080808);
+}
+
+.canvas-fade-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 20vh;
+  pointer-events: none;
+  background: linear-gradient(to top, transparent, #080808);
+}
+
+/* ================================
+   HEADER
+   ================================ */
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 1.5rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(8, 8, 8, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(39, 39, 42, 0.5);
+  transition: background 0.3s ease;
+}
+
+.site-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+}
+
+.site-logo-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.site-logo-sub {
+  font-size: 0.55rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.site-nav {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.site-nav a {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.site-nav a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: var(--gold);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.site-nav a:hover {
+  color: #ffffff;
+}
+
+.site-nav a:hover::after {
+  transform: scaleX(1);
+}
+
+.site-nav a.active {
+  color: #ffffff;
+}
+
+.site-nav a.active::after {
+  transform: scaleX(1);
+}
+
+/* ================================
+   FOOTER SECTION
+   ================================ */
+.footer-section {
+  padding: 6rem 3rem 3rem;
+  border-top: 1px solid #18181b;
+}
+
+/* ================================
+   FORM STYLES
+   ================================ */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.form-input {
+  background: var(--bg-card);
+  border: 1px solid var(--accent-line);
+  color: #ffffff;
+  padding: 0.875rem 1rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.875rem;
+  outline: none;
+  transition: border-color 0.3s ease, background 0.3s ease;
+  width: 100%;
+}
+
+.form-input:focus {
+  border-color: var(--gold);
+  background: var(--bg-elevated);
+}
+
+.form-input::placeholder {
+  color: var(--text-faint);
+}
+
+select.form-input option {
+  background: var(--bg-card);
+  color: #ffffff;
+}
+
+/* ================================
+   PAGE TRANSITION / HERO BANNER
+   ================================ */
+.page-hero {
+  padding: 10rem 3rem 6rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 3rem;
+  right: 3rem;
+  height: 1px;
+  background: var(--accent-line);
+}
+
+/* ================================
+   NOISE TEXTURE LAYER
+   ================================ */
+.noise-overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 999;
+  opacity: 0.025;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 128px 128px;
+}
+
+/* ================================
+   SERIES NUMBER DECORATION
+   ================================ */
+.series-number {
+  position: absolute;
+  font-size: 0.55rem;
+  font-weight: 600;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #3f3f46;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+}
+
+/* ================================
+   SECTION DIVIDER
+   ================================ */
+.section-divider {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--accent-line), transparent);
+}
+
+/* ================================
+   GOLD GLOW EFFECT
+   ================================ */
+.gold-glow-text {
+  text-shadow: 0 0 30px rgba(201, 168, 76, 0.3);
+}
+
+/* ================================
+   BADGE
+   ================================ */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.75rem;
+  border: 1px solid var(--accent-line);
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.badge-gold {
+  border-color: rgba(201, 168, 76, 0.3);
+  color: var(--gold);
+  background: var(--gold-glow);
+}
+
+/* ================================
+   RESPONSIVE
+   ================================ */
+@media (max-width: 768px) {
+  .site-header {
+    padding: 1.25rem 1.5rem;
+  }
+
+  .site-nav {
+    display: none;
+  }
+
+  .beat-title {
+    font-size: clamp(2.5rem, 10vw, 5rem);
+  }
+
+  .hero-climax {
+    padding: 5rem 1.5rem 4rem;
+  }
+
+  .hero-climax-text {
+    font-size: clamp(2.5rem, 12vw, 5rem);
+  }
+
+  .page-hero {
+    padding: 8rem 1.5rem 4rem;
+  }
+
+  .footer-section {
+    padding: 4rem 1.5rem 2rem;
+  }
+}
