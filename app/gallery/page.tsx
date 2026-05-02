@@ -227,7 +227,7 @@ export default function GalleryPage() {
                 >
                   {v.title}
                 </p>
-                <p className="text-zinc-500 text-xs mt-1">FT Garage · Tips Otomotif</p>
+                <p className="text-zinc-500 text-xs mt-1">LQ Garage · Tips Otomotif</p>
               </motion.div>
             ))}
           </div>

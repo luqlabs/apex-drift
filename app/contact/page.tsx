@@ -27,8 +27,8 @@ const CONTACT_INFO = [
       </svg>
     ),
     label: "WhatsApp",
-    value: "0812-1666-9089",
-    href: "https://wa.me/6281216669089",
+    value: "0899-9888-7776",
+    href: "https://wa.me/6289998887776",
     linkLabel: "Mulai Chat →",
   },
   {
@@ -39,8 +39,8 @@ const CONTACT_INFO = [
       </svg>
     ),
     label: "Instagram",
-    value: "@fullthrottle_garagesby",
-    href: "https://instagram.com/fullthrottle_garagesby",
+    value: "@lqgarage_official",
+    href: "https://instagram.com/lqgarage_official",
     linkLabel: "Kunjungi Profil →",
   },
 ];
@@ -152,7 +152,7 @@ export default function ContactPage() {
                   Kendaraan Anda mogok di jalan? Hubungi kami segera untuk bantuan darurat.
                 </p>
                 <a
-                  href="https://wa.me/6281216669089?text=DARURAT%3A%20Kendaraan%20saya%20mogok%2C%20butuh%20bantuan%20segera."
+                  href="https://wa.me/6289998887776?text=DARURAT%3A%20Kendaraan%20saya%20mogok%2C%20butuh%20bantuan%20segera."
                   target="_blank"
                   rel="noopener noreferrer"
                   id="contact-emergency-btn"
@@ -180,8 +180,8 @@ export default function ContactPage() {
                 style={{ height: "400px" }}
               >
                 <iframe
-                  title="Lokasi FT Garage Surabaya"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.1854932456!2d112.7582!3d-7.3278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fb84d4b0b79b%3A0x98f46f8c1e4d6a3e!2sBengkel%20Mobil%20FT%20Garage%20Kedung%20Asem%20%7C%20Spesialis%20Tune%20Up%20%7C%20Remap%20Ecu!5e0!3m2!1sid!2sid!4v1712400000000!5m2!1sid!2sid"
+                  title="Lokasi LQ Garage Surabaya"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.1854932456!2d112.7582!3d-7.3278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fb84d4b0b79b%3A0x98f46f8c1e4d6a3e!2sBengkel%20Mobil%20LQ%20Garage%20Kedung%20Asem%20%7C%20Spesialis%20Tune%20Up%20%7C%20Remap%20Ecu!5e0!3m2!1sid!2sid!4v1712400000000!5m2!1sid!2sid"
                   width="100%"
                   height="100%"
                   style={{ border: 0, filter: "invert(90%) hue-rotate(180deg)" }}
@@ -279,7 +279,7 @@ export default function ContactPage() {
                 <span>Booking Online</span>
               </Link>
               <a
-                href="https://wa.me/6281216669089"
+                href="https://wa.me/6289998887776"
                 className="btn-wa"
                 id="contact-wa-cta"
                 target="_blank"

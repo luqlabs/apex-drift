@@ -101,7 +101,7 @@ Oli mesin adalah darah kendaraan Anda. Fungsinya melumasi komponen mesin yang be
 4. Bau terbakar dari ruang mesin
 5. Lampu indikator oli menyala
 
-**Tips FT Garage:** Selalu gunakan oli yang sesuai spesifikasi pabrikan kendaraan Anda. Jangan asal murah — kualitas oli langsung berdampak pada umur mesin.
+**Tips LQ Garage:** Selalu gunakan oli yang sesuai spesifikasi pabrikan kendaraan Anda. Jangan asal murah — kualitas oli langsung berdampak pada umur mesin.
   `,
 };
 
@@ -126,7 +126,7 @@ export default function BlogPage() {
             </h1>
             <div className="gold-line mb-6" />
             <p className="text-zinc-400 text-sm max-w-lg leading-relaxed">
-              Pelajari cara merawat kendaraan Anda dengan benar. Artikel edukasi dari mekanik berpengalaman FT Garage — gratis untuk semua.
+              Pelajari cara merawat kendaraan Anda dengan benar. Artikel edukasi dari mekanik berpengalaman LQ Garage — gratis untuk semua.
             </p>
           </motion.div>
         </div>
@@ -253,10 +253,10 @@ export default function BlogPage() {
             <p className="label-gold mb-4">Punya pertanyaan seputar kendaraan?</p>
             <h2 className="heading-lg text-white mb-4">Tanya Langsung<br />ke Mekanik Kami</h2>
             <p className="text-zinc-500 text-sm mb-8 max-w-md mx-auto">
-              Tim mekanik FT Garage siap menjawab pertanyaan seputar kendaraan Anda — gratis, tanpa syarat.
+              Tim mekanik LQ Garage siap menjawab pertanyaan seputar kendaraan Anda — gratis, tanpa syarat.
             </p>
             <a
-              href="https://wa.me/6281216669089?text=Halo%20FT%20Garage%2C%20saya%20ingin%20bertanya%20seputar%20kendaraan%20saya."
+              href="https://wa.me/6289998887776?text=Halo%20LQ%20Garage%2C%20saya%20ingin%20bertanya%20seputar%20kendaraan%20saya."
               className="btn-wa inline-flex"
               id="blog-wa-cta"
               target="_blank"

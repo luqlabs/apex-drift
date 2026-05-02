@@ -28,18 +28,18 @@ export default function Header() {
         role="banner"
       >
         {/* Logo */}
-        <Link href="/" className="site-logo" id="site-logo" aria-label="FT Garage - Beranda">
+        <Link href="/" className="site-logo" id="site-logo" aria-label="LQ Garage - Beranda">
           {/* Logo Icon — stylized F+T */}
           <div className="w-8 h-8 border border-[var(--gold)] flex items-center justify-center flex-shrink-0">
             <span
               style={{ fontFamily: "Montserrat, sans-serif" }}
               className="text-[var(--gold)] font-black text-sm leading-none"
             >
-              FT
+              LQ
             </span>
           </div>
           <div className="flex flex-col leading-none">
-            <span className="site-logo-text">FT Garage</span>
+            <span className="site-logo-text">LQ Garage</span>
             <span className="site-logo-sub">Kedung Asem · Surabaya</span>
           </div>
         </Link>

@@ -11,7 +11,7 @@ const FRAME_PATH = (i: number) => {
   return `/frames/ezgif-frame-${n}.jpg`;
 };
 
-// Scroll beats — FT Garage branded
+// Scroll beats — LQ Garage branded
 type Beat = {
   id: string;
   startPct: number;
@@ -79,11 +79,11 @@ function Preloader({
                 style={{ fontFamily: "Montserrat, sans-serif" }}
                 className="text-[var(--gold)] font-black text-sm leading-none"
               >
-                FT
+                LQ
               </span>
             </div>
             <p className="loader-text tracking-[0.3em] text-zinc-500">
-              FT GARAGE · SURABAYA
+              LQ GARAGE · SURABAYA
             </p>
           </div>
 
@@ -403,14 +403,14 @@ export default function DriftSequence() {
         className="relative"
         style={{ height: "1100vh" }}
         id="drift-sequence"
-        aria-label="FT Garage Scroll Experience"
+        aria-label="LQ Garage Scroll Experience"
       >
         <div className="sticky top-0 h-screen w-full overflow-hidden">
           {/* Canvas */}
           <canvas
             ref={canvasRef}
             className="drift-canvas absolute inset-0 w-full h-full object-cover"
-            aria-label="FT Garage cinematic animation"
+            aria-label="LQ Garage cinematic animation"
           />
 
           {/* Vignette layers */}
@@ -421,7 +421,7 @@ export default function DriftSequence() {
           {/* Vertical series label */}
           <div className="absolute left-8 top-1/2 -translate-y-1/2 z-10 hidden md:block">
             <p className="series-number text-zinc-800">
-              FT GARAGE // KEDUNG ASEM · SBY
+              LQ GARAGE // KEDUNG ASEM · SBY
             </p>
           </div>
 

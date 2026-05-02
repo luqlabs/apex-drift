@@ -86,7 +86,7 @@ function BookingForm() {
     if (!validate()) return;
 
     const msg = [
-      `*BOOKING SERVIS — FT GARAGE*`,
+      `*BOOKING SERVIS — LQ GARAGE*`,
       ``,
       `*Nama:* ${form.name}`,
       `*No. HP:* ${form.phone}`,
@@ -98,7 +98,7 @@ function BookingForm() {
       `*Catatan:* ${form.notes || "-"}`,
     ].join("\n");
 
-    const waUrl = `https://wa.me/6281216669089?text=${encodeURIComponent(msg)}`;
+    const waUrl = `https://wa.me/6289998887776?text=${encodeURIComponent(msg)}`;
     window.open(waUrl, "_blank");
     setSubmitted(true);
   };
@@ -157,7 +157,7 @@ function BookingForm() {
                 Booking Terkirim!
               </h3>
               <p className="text-zinc-400 text-sm leading-relaxed mb-2">
-                Detail booking Anda telah dikirim ke WhatsApp admin FT Garage.
+                Detail booking Anda telah dikirim ke WhatsApp admin LQ Garage.
               </p>
               <p className="text-zinc-500 text-xs mb-8">
                 Tim kami akan segera mengonfirmasi jadwal Anda.
@@ -305,7 +305,7 @@ function BookingForm() {
             <path strokeLinecap="round" strokeLinejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z" />
           </svg>
           <p className="text-zinc-400 text-xs leading-relaxed">
-            Booking ini akan langsung terkirim ke WhatsApp admin FT Garage. Tim kami akan mengonfirmasi jadwal Anda dalam 1×24 jam. Disarankan membuat janji terlebih dahulu sebelum datang.
+            Booking ini akan langsung terkirim ke WhatsApp admin LQ Garage. Tim kami akan mengonfirmasi jadwal Anda dalam 1×24 jam. Disarankan membuat janji terlebih dahulu sebelum datang.
           </p>
         </div>
 

@@ -12,7 +12,7 @@ const TEAM = [
     role: "Owner & Head Mechanic",
     expertise: "ECU Remap, Engine Tuning",
     experience: "12+ Tahun",
-    initial: "FT",
+    initial: "LQ",
   },
   {
     id: "mech1",
@@ -57,7 +57,7 @@ const FACILITIES = [
 ];
 
 const MILESTONES = [
-  { year: "2014", event: "FT Garage berdiri di Kedung Asem, Surabaya" },
+  { year: "2014", event: "LQ Garage berdiri di Kedung Asem, Surabaya" },
   { year: "2017", event: "Mulai spesialisasi ECU Remap & Engine Tuning" },
   { year: "2020", event: "Pindah ke lokasi baru yang lebih besar" },
   { year: "2022", event: "Meraih rating 4.9 ⭐ di Google Maps" },
@@ -71,7 +71,7 @@ export default function AboutPage() {
       <Header />
 
       {/* Page Hero */}
-      <section className="page-hero" aria-label="Tentang FT Garage">
+      <section className="page-hero" aria-label="Tentang LQ Garage">
         <div className="max-w-screen-xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-end">
             <motion.div
@@ -82,7 +82,7 @@ export default function AboutPage() {
               <p className="label-gold mb-4">Mengenal Kami Lebih Dekat</p>
               <h1 className="heading-xl text-white mb-6">
                 Tentang<br />
-                <span style={{ color: "var(--gold)" }}>FT Garage</span>
+                <span style={{ color: "var(--gold)" }}>LQ Garage</span>
               </h1>
               <div className="gold-line mb-6" />
               <p className="text-zinc-400 text-sm leading-relaxed max-w-lg">
@@ -219,7 +219,7 @@ export default function AboutPage() {
       </section>
 
       {/* Milestones */}
-      <section className="py-12 md:py-20 px-4 md:px-6 bg-[#0D0D0D]" aria-label="Perjalanan FT Garage">
+      <section className="py-12 md:py-20 px-4 md:px-6 bg-[#0D0D0D]" aria-label="Perjalanan LQ Garage">
         <div className="max-w-screen-xl mx-auto">
           <motion.div
             className="mb-14"
@@ -229,7 +229,7 @@ export default function AboutPage() {
             transition={{ duration: 0.7 }}
           >
             <p className="label-gold mb-3">Jejak Langkah Kami</p>
-            <h2 className="heading-lg text-white mb-4">Perjalanan FT Garage</h2>
+            <h2 className="heading-lg text-white mb-4">Perjalanan LQ Garage</h2>
             <div className="gold-line" />
           </motion.div>
 

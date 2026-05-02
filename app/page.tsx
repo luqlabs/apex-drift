@@ -90,7 +90,7 @@ const TESTIMONIALS = [
     name: "Budi Santoso",
     car: "Toyota Camry 2020",
     rating: 5,
-    text: "ECU remap di FT Garage hasilnya luar biasa! Tenaga mesin terasa lebih responsif dan konsumsi BBM lebih efisien. Mekaniknya juga sangat profesional dan transparan soal harga.",
+    text: "ECU remap di LQ Garage hasilnya luar biasa! Tenaga mesin terasa lebih responsif dan konsumsi BBM lebih efisien. Mekaniknya juga sangat profesional dan transparan soal harga.",
     date: "2 minggu lalu",
   },
   {
@@ -141,7 +141,7 @@ export default function HomePage() {
       <DriftSequence />
 
       {/* ── HERO CLIMAX — ENGINE IS OUR PASSION ── */}
-      <section className="hero-climax" id="hero-climax" aria-label="FT Garage Hero">
+      <section className="hero-climax" id="hero-climax" aria-label="LQ Garage Hero">
         <div className="max-w-screen-xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-16 items-start">
             {/* Left: Big Text */}
@@ -175,7 +175,7 @@ export default function HomePage() {
                   </svg>
                 </Link>
                 <a
-                  href="https://wa.me/6281216669089"
+                  href="https://wa.me/6289998887776"
                   className="btn-wa"
                   id="climax-wa-btn"
                   target="_blank"
@@ -285,7 +285,7 @@ export default function HomePage() {
             </div>
             <div className="h-16 w-px bg-zinc-800" />
             <div>
-              <p className="text-white font-semibold mb-1">Bengkel Mobil FT Garage</p>
+              <p className="text-white font-semibold mb-1">Bengkel Mobil LQ Garage</p>
               <p className="text-zinc-500 text-sm">Kedung Asem, Surabaya</p>
               <a
                 href="https://maps.app.goo.gl/PPwvccxK6iUJuZcp7"
@@ -345,7 +345,7 @@ export default function HomePage() {
               <h3 className="heading-md text-white">Konsultasi Gratis<br />via WhatsApp</h3>
             </div>
             <a
-              href="https://wa.me/6281216669089?text=Halo%20FT%20Garage%2C%20saya%20ingin%20konsultasi%20mengenai%20kendaraan%20saya."
+              href="https://wa.me/6289998887776?text=Halo%20LQ%20Garage%2C%20saya%20ingin%20konsultasi%20mengenai%20kendaraan%20saya."
               className="btn-wa flex-shrink-0"
               id="home-wa-cta"
               target="_blank"

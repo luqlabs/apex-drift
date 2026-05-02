@@ -172,7 +172,7 @@ export default function ServicesPage() {
                 <span>Booking Online Sekarang</span>
               </Link>
               <a
-                href="https://wa.me/6281216669089?text=Halo%20FT%20Garage%2C%20saya%20butuh%20konsultasi%20servis%20kendaraan."
+                href="https://wa.me/6289998887776?text=Halo%20LQ%20Garage%2C%20saya%20butuh%20konsultasi%20servis%20kendaraan."
                 className="btn-wa"
                 id="services-wa-btn"
                 target="_blank"

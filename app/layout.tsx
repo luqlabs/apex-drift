@@ -15,21 +15,21 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "FT Garage Surabaya | Bengkel Spesialis Tune Up & ECU Remap",
+  title: "LQ Garage Surabaya | Bengkel Spesialis Tune Up & ECU Remap",
   description:
-    "Bengkel Mobil FT Garage di Kedung Asem Surabaya. Spesialis ECU Remap, Tune Up, Kaki-kaki, Kelistrikan & AC, Body & Paint. Rating 4.9 ⭐ dari 537 pelanggan. Booking via WhatsApp.",
+    "Bengkel Mobil LQ Garage di Kedung Asem Surabaya. Spesialis ECU Remap, Tune Up, Kaki-kaki, Kelistrikan & AC, Body & Paint. Rating 4.9 ⭐ dari 537 pelanggan. Booking via WhatsApp.",
   keywords: [
     "bengkel surabaya",
     "ECU remap surabaya",
     "tune up mobil surabaya",
     "bengkel kedung asem",
-    "FT garage",
-    "full throttle garage",
+    "LQ garage",
+    "lq garage",
     "spooring balancing surabaya",
     "service AC mobil surabaya",
   ],
   openGraph: {
-    title: "FT Garage Surabaya | Bengkel Spesialis Tune Up & ECU Remap",
+    title: "LQ Garage Surabaya | Bengkel Spesialis Tune Up & ECU Remap",
     description:
       "Spesialis ECU Remap, Tune Up, Kaki-kaki & lebih. Rating 4.9 ⭐. Engine is Our Passion.",
     type: "website",

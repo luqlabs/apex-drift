@@ -27,7 +27,7 @@ export default function Footer() {
       id="footer"
       className="footer-section bg-[#080808]"
       role="contentinfo"
-      aria-label="Footer situs FT Garage"
+      aria-label="Footer situs LQ Garage"
     >
       <div className="max-w-screen-xl mx-auto">
         {/* Top row */}
@@ -40,12 +40,12 @@ export default function Footer() {
                   style={{ fontFamily: "Montserrat, sans-serif" }}
                   className="text-[var(--gold)] font-black text-base leading-none"
                 >
-                  FT
+                  LQ
                 </span>
               </div>
               <div>
                 <p className="font-montserrat text-white font-black text-sm tracking-wider uppercase">
-                  FT Garage
+                  LQ Garage
                 </p>
                 <p className="label-gold text-[0.55rem]">Surabaya</p>
               </div>
@@ -114,22 +114,22 @@ export default function Footer() {
               <div>
                 <p className="text-[0.55rem] tracking-wider text-[var(--text-faint)] uppercase mb-1">Kontak</p>
                 <a
-                  href="https://wa.me/6281216669089"
+                  href="https://wa.me/6289998887776"
                   className="text-sm text-zinc-400 hover:text-[var(--gold)] transition-colors block"
                   id="footer-whatsapp"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  0812-1666-9089 (WA)
+                  0899-9888-7776 (WA)
                 </a>
                 <a
-                  href="https://instagram.com/fullthrottle_garagesby"
+                  href="https://instagram.com/lqgarage_official"
                   className="text-sm text-zinc-400 hover:text-[var(--gold)] transition-colors block"
                   id="footer-instagram"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  @fullthrottle_garagesby
+                  @lqgarage_official
                 </a>
               </div>
             </div>
@@ -142,7 +142,7 @@ export default function Footer() {
         {/* Bottom row */}
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
           <p className="text-[0.55rem] tracking-[0.2em] text-zinc-700 uppercase">
-            © 2024 FT Garage Surabaya. All rights reserved.
+            © 2024 LQ Garage Surabaya. All rights reserved.
           </p>
           <div className="flex items-center gap-2">
             <div className="badge badge-gold">
